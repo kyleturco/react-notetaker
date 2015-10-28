@@ -46,7 +46,7 @@
 
 	'use strict';
 
-	var Reach = __webpack_require__(1);
+	var React = __webpack_require__(1);
 
 	var Main = React.createClass({
 	  displayName: 'Main',
@@ -55,7 +55,7 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      'Hello world'
+	      'Hello World'
 	    );
 	  }
 	});

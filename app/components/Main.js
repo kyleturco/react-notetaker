@@ -1,10 +1,10 @@
-var Reach = require('react');
+var React = require('react');
 
 var Main = React.createClass({
   render: function(){
     return (
       <div>
-        Hello world
+        Hello World
       </div>
     )
   }
