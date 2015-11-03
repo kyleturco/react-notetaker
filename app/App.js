@@ -5,4 +5,4 @@ var routes = require('./config/routes');
 React.render(
   <Router>{routes}</Router>,
   document.getElementById('app')
-);s
+);
