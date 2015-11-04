@@ -23768,9 +23768,9 @@
 	  mixins: [Router.State],
 	  getInitialState: function getInitialState() {
 	    return {
-	      notes: [],
-	      bio: {},
-	      repos: []
+	      notes: ['note1', 'note2'],
+	      bio: { name: 'Kyle' },
+	      repos: [1, 2, 3]
 	    };
 	  },
 	  render: function render() {
@@ -23814,7 +23814,14 @@
 			return React.createElement(
 				'div',
 				null,
-				' REPOS '
+				' REPOS',
+				React.createElement('br', null),
+				'Username: ',
+				this.props.username,
+				' ',
+				React.createElement('br', null),
+				'REPOS: ',
+				this.props.repos
 			);
 		}
 	});
@@ -23836,7 +23843,14 @@
 			return React.createElement(
 				'div',
 				null,
-				' USER PROFILES '
+				'User Profile ',
+				React.createElement('br', null),
+				'Username: ',
+				this.props.username,
+				' ',
+				React.createElement('br', null),
+				'Bio: ',
+				this.props.bio
 			);
 		}
 	});
@@ -23858,7 +23872,14 @@
 			return React.createElement(
 				'div',
 				null,
-				' NOTES '
+				'NOTES ',
+				React.createElement('br', null),
+				'Username: ',
+				this.props.username,
+				' ',
+				React.createElement('br', null),
+				'NOTES: ',
+				this.props.notes
 			);
 		}
 	});
